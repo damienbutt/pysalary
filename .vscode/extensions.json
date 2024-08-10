@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "editorconfig.editorconfig",
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.vscode-pylance",
+        "ms-python.mypy-type-checker",
+        "zeshuaro.vscode-python-poetry",
+        "tamasfe.even-better-toml"
+    ]
+}
