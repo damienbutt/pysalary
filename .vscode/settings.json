@@ -33,5 +33,6 @@
     },
     "editor.codeActionsOnSave": {
         "source.fixAll.markdownlint": "explicit"
-    }
+    },
+    "python.analysis.extraPaths": ["./pysalary"]
 }

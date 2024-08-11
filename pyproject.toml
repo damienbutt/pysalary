@@ -1,16 +1,18 @@
 [tool.poetry]
-name = "python-small-projects"
+name = "pysalary"
 version = "0.1.0"
-description = "A collection of small Python projects"
+description = "A simple CLI tool to break down your salary"
 authors = ["Damien Butt <22627489+damienbutt@users.noreply.github.com>"]
 license = "MIT"
 readme = "README.md"
-package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
 rich = "^13.7.1"
+click = "^8.1.7"
 
+[tool.poetry.scripts]
+pysalary = "pysalary.app:main"
 
 [build-system]
 requires = ["poetry-core"]
