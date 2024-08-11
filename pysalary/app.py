@@ -7,24 +7,19 @@ from .table import get_table
 import click
 
 
-@click.command("pysalary")
+@click.command(
+    "pysalary",
+    help="Breakdown your salary and view you tax deductions and take home pay in a tabular format",
+)
 @click.option(
     "--salary",
     "-s",
     type=float,
-    prompt="Enter your yearly salary",
     help="Your yearly salary",
+    prompt="Enter your yearly salary",
 )
-def main() -> None:
-    while True:
-        try:
-            salary = float(input("Enter your yearly salary: "))
-            break
-        except ValueError:
-            print("Please enter a valid number. Eg. 25000")
-        except KeyboardInterrupt:
-            exit(0)
-
+@click.version_option(message="%(version)s")
+def main(salary: float) -> None:
     try:
         breakdown = get_breakdown(salary)
     except ValueError as e:
