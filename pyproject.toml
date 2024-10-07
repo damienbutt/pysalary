@@ -8,7 +8,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-rich = "^13.7.1"
+rich = "^13.9.2"
 click = "^8.1.7"
 
 [tool.poetry.scripts]
